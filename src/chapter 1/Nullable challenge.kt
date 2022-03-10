@@ -15,7 +15,7 @@ fun main(){
   * */
 
     val password: String? = "12345asdfgqweryxyz"
-    val message = if (password == null || password.isEmpty()) {
+    val message = if (password.isNullOrEmpty()) {
         "Ehm, you need a password to keep safe!"
     } else if(password.length < 6){
         "Weak password! Try adding a few more symbols to it!"
