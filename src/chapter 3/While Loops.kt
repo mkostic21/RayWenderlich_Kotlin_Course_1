@@ -13,8 +13,7 @@ fun main() {
     //challenge 1
     var i = 1
     while (i <= 15) {
-        print("$i ")
-        i++
+        print("${i++} ")
     }
 
     //challenge 2
@@ -22,7 +21,7 @@ fun main() {
     i = names.lastIndex
     println()
     do {
-        if (i > names.lastIndex || i < 0) return
+        if (i < 0) return
         println(names[i--])
-    } while (i >= 0 && i < names.size)
+    } while (i >= 0)
 }
