@@ -1,6 +1,6 @@
 package `chapter 3`
 
-fun main(){
+fun main() {
     /*
   * Challenge 1:
   * Create a range of 20 numbers, and iterate over it, printing out the numbers.
@@ -14,20 +14,20 @@ fun main(){
 
     //challenge 1
     val numRange = 0..20
-    for (number in numRange){
+    for (number in numRange) {
         print("$number ")
     }
 
     //challenge 2
     println()
-    for(number in numRange step 3){
+    for (number in numRange step 3) {
         print("$number ")
     }
 
     //challenge 3
     println()
     val decreasingNumRange = 15 downTo 0
-    for(number in decreasingNumRange step 2){
+    for (number in decreasingNumRange step 2) {
         print("$number ")
     }
 }

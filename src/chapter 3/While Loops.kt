@@ -1,6 +1,6 @@
 package `chapter 3`
 
-fun main(){
+fun main() {
     /*
   * Challenge 1:
   * Print numbers from 1 to 15, using a while loop.
@@ -11,8 +11,8 @@ fun main(){
   * */
 
     //challenge 1
-    var i=1
-    while(i<=15){
+    var i = 1
+    while (i <= 15) {
         print("$i ")
         i++
     }
@@ -22,7 +22,7 @@ fun main(){
     i = names.lastIndex
     println()
     do {
-        if(i > names.lastIndex || i < 0) return
+        if (i > names.lastIndex || i < 0) return
         println(names[i--])
-    }while(i >= 0 && i < names.size)
+    } while (i >= 0 && i < names.size)
 }

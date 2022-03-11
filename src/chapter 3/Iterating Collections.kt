@@ -1,6 +1,6 @@
 package `chapter 3`
 
-fun main(){
+fun main() {
 /*
  * Challenge:
  * Simulate a game where you have to find the X in a matrix!
@@ -16,7 +16,7 @@ fun main(){
  * Once you print the coordinates out, stop iterating over the matrix.
  * */
 
-    val matrix = Array(3) {Array(5){"."}}
+    val matrix = Array(3) { Array(5) { "." } }
     matrix[1][2] = "X"
     row@ for (row in 0..matrix.lastIndex)
         for (column in 0..matrix.lastIndex)
@@ -24,7 +24,6 @@ fun main(){
                 println("coords: $row:$column")
                 break@row
             }
-
 
 
 }
