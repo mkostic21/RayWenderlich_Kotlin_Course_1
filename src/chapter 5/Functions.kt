@@ -26,10 +26,7 @@ fun main() {
     * */
 
     fun getNameLength(name: String, middleNames: List<String>, lastname: String = ""): Int {
-        var middleNamesLength = 0
-        for (middleName in middleNames) {
-            middleNamesLength += middleName.length
-        }
+        val middleNamesLength = middleNames.sumOf { middleName -> middleName.length }
         return getNameLength(name, lastname) + middleNamesLength
     }
     println(getNameLength("Franz", listOf("Karl", "Ludwig", "Joseph", "Maria"), "Ferdinand"))
